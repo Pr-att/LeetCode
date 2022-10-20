@@ -12,4 +12,5 @@ def solution():
         if value > 1:
             return key
 
+
 print(solution())
