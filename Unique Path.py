@@ -9,4 +9,5 @@ def paths(m, n, dp):
 
 
 memo = [[-1 for i in range(7)] for j in range(3)]
+print(memo)
 print(paths(2, 6, memo))
