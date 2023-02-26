@@ -24,4 +24,27 @@ def findJudge(n, trust):
         return res + 1
     else:
         return - 1
-print(findJudge(3, [[1,3],[2,3],[3,1]]))
+
+
+print(findJudge(3, [[1, 3], [2, 3], [3, 1]]))
+
+# def findJudge(n, trust):
+#     # create two arrays to keep track of the number of people trusted and the number of people trusting
+#     # each person. Index 0 is unused to make the code more readable.
+#     trusted = [0] * (n+1)
+#     trusting = [0] * (n+1)
+
+#     # iterate through the trust array to update the trust counts
+#     for a, b in trust:
+#         trusted[b] += 1
+#         trusting[a] += 1
+
+#     # find the person who is trusted by everyone else and trusts nobody
+#     for i in range(1, n+1):
+#         if trusted[i] == n - 1 and trusting[i] == 0:
+#             return i
+
+#     # no town judge was found
+#     return -1
+
+# print(findJudge(4, [[1,3],[1,4],[2,3]]))
